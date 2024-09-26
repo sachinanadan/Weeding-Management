@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wedding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #e9eef1; /* Light gray background */
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        .about-section, .details-section, .availability-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            margin: 30px 0;
+            position: relative;
+            z-index: 2;
+            width: 100%; /* Make sections full width */
+        }
+
+        .about-section h2,
+        .details-section h3,
+        .availability-section h3 {
+            color: #ff6347;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .details-section h3,
+        .availability-section h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-section p,
+        .details-section p,
+        .availability-section p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: rgba(255, 99, 71, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-section h2 {
+                font-size: 28px;
+            }
+
+            .about-section p, .details-section p, .availability-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">My Blog</div> <!-- Logo as text for simplicity -->
+            <nav>
+                <ul>
+                    <li><a href="HOME.html">HOME</a></li>
+                    <li><a href="ABOUT_US.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="guestbook.html">GUESTBOOK</a></li>
+                    <!-- <li><a href="blog.html">BLOG</a></li> -->
+                    <li><a href="cont.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="about-section">
+            <h2>About Us</h2>
+            <p>We are excited to share our journey of love and celebration with you. Our story began on a beautiful day when we first met, and since then, we have cherished every moment together.</p>
+            <p>As we prepare for our wedding, we look forward to creating unforgettable memories with our family and friends.</p>
+        </div>
+
+        <div class="details-section">
+            <h3>Wedding Details</h3>
+            
+            <p><strong>Venue:</strong> Navtoli , Madhubani , Bihar</p>
+            <p><strong>Time:</strong> From 10:00 am To 5:00 PM onwards</p>
+            <p>We would be honored to have you celebrate with us on our special day.</p>
+        </div>
+
+        <div class="availability-section">
+            <h3>Room Availability</h3>
+            <p>Rooms are available for booking!</p>
+            <p>Please contact us for more information.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Wedding of [Couple's Names]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

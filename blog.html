@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #e4e8eb;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .function-selection {
+            margin: 20px 0;
+        }
+
+        .function-selection button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .function-selection button:hover {
+            background-color: #e5533d;
+        }
+
+        .blog-posts {
+            margin: 20px 0;
+        }
+
+        .post {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .post h2 {
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #e4e8eb;
+            margin-top: 20px;
+        }
+
+        /* New styles for the image */
+        .pooja-image {
+            width: 100%; /* Make the image responsive */
+            max-width: 500px; /* Set a maximum width */
+            margin: 10px 0; /* Add some margin */
+            border-radius: 8px; /* Optional: round the corners */
+        }
+    </style>
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="HOME.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="guestbook.html">GUESTBOOK</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="cont.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="function-selection">
+            <h2>Select a Function</h2>
+            <button onclick="showFunction('wedding')">Wedding</button>
+            <button onclick="showFunction('birthday')">Birthday Party</button>
+            <button onclick="showFunction('pooja')">Pooja</button>
+        </section>
+
+        <section id="blog-posts" class="blog-posts">
+            <!-- Dynamic content will be inserted here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showFunction(functionType) {
+            const blogPosts = document.getElementById('blog-posts');
+            blogPosts.innerHTML = ''; // Clear previous content
+
+            let content = '';
+
+            if (functionType === 'wedding') {
+                content = `
+                    <article class="post">
+                        <h2>Wedding Decoration Ideas</h2>
+                        <p class="date">Posted on September 26, 2024</p>
+                        <p>Explore the latest trends in wedding decorations that will make your special day unforgettable.</p>
+                    </article>
+                    <article class="post">
+                        <h2>Unique Wedding Venues</h2>
+                        <p class="date">Posted on September 25, 2024</p>
+                        <p>Discover beautiful wedding venues that offer stunning backdrops for your wedding photos.</p>
+                    </article>`;
+            } else if (functionType === 'birthday') {
+                content = `
+                    <article class="post">
+                        <h2>Fun Birthday Party Themes</h2>
+                        <p class="date">Posted on September 26, 2024</p>
+                        <p>Check out creative themes for your next birthday party to make it memorable.</p>
+                    </article>
+                    <article class="post">
+                        <h2>Birthday Party Planning Tips</h2>
+                        <p class="date">Posted on September 25, 2024</p>
+                        <p>Learn how to plan the perfect birthday party with our helpful tips.</p>
+                    </article>`;
+            } else if (functionType === 'pooja') {
+                content = `
+                    <article class="post">
+                        <h2>Pooja Setup Ideas</h2>
+                        <p class="date">Posted on September 26, 2024</p>
+                        <img src="path/to/your/pooja-image.jpg" alt="Pooja Setup" class="pooja-image"> <!-- Add your image path here -->
+                        <p>Get inspired with beautiful pooja setup ideas for your spiritual ceremonies.</p>
+                    </article>
+                    <article class="post">
+                        <h2>Pooja Rituals Explained</h2>
+                        <p class="date">Posted on September 25, 2024</p>
+                        <p>Learn about the different pooja rituals and their significance in our culture.</p>
+                    </article>`;
+            }
+
+            blogPosts.innerHTML = content; // Insert the new content
+        }
+    </script>
+</body>
+</html>

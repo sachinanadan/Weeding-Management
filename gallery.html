@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wedding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #e9eef1;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        /* Grid layout for images */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Image container with hover effect */
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image styling */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
+
+        /* Heart button styling */
+        .heart-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            color: #ff6347;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            opacity: 0;
+        }
+
+        .heart-btn:hover {
+            background-color: #ff6347;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Show heart button on hover */
+        .image-container:hover .heart-btn {
+            opacity: 1;
+        }
+
+        /* Styling for names and pricing */
+        .names {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 0;
+            background-color: #f5f5f5;
+            font-size: 18px;
+        }
+
+        /* Video styling */
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        video:hover {
+            transform: scale(1.1);
+        }
+
+        .balaji {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ff6347;
+        }
+
+        /* Address tooltip styling */
+        .address-tooltip {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Show address tooltip on hover */
+        .image-container:hover .address-tooltip {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">My Blog</div>
+            <nav>
+                <ul>
+                    <li><a href="HOME.html">HOME</a></li>
+                    <li><a href="ABOUT_US.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="guestbook.html">GUESTBOOK</a></li>
+                    <!-- <li><a href="blog.html">BLOG</a></li> -->
+                    <li><a href="cont.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="balaji">BALAJI TENTHOUSE</div>
+
+    <div class="image-gallery">
+        <div class="image-container">
+            <img class="n1" src="BALAJI TENTHOUSE.jpg" alt="Tenthouse 150000₹">
+            <button class="heart-btn">&#10084;</button>
+            <div class="address-tooltip">Location: Bihar Navtoli</div>
+            <div class="names">150000₹</div>
+        </div>
+
+        <div class="image-container">
+            <img class="n1" src="wedding16.jpg" alt="600000₹ Stage">
+            <button class="heart-btn">&#10084;</button>
+            <div class="address-tooltip">Location: Delhi</div>
+            <div class="names">600000₹</div>
+        </div>
+
+        <div class="image-container">
+            <img class="n1" src="wedding19.jpg" alt="Open Light Pandal">
+            <button class="heart-btn">&#10084;</button>
+            <div class="address-tooltip">Location: Bangalore</div>
+            <div class="names">'OPEN LIGHT PANDAL' 100000₹</div>
+        </div>
+        <div class="image-container">
+            <img class="n1" src="wedding19.jpg" alt="Open Light Pandal">
+            <button class="heart-btn">&#10084;</button>
+            <div class="address-tooltip">Location: Bangalore</div>
+            <div class="names">'OPEN LIGHT PANDAL' 100000₹</div>
+        </div>
+        <div class="image-container">
+            <img class="n1" src="wedding19.jpg" alt="Open Light Pandal">
+            <button class="heart-btn">&#10084;</button>
+            <div class="address-tooltip">Location: Bangalore</div>
+            <div class="names">'OPEN LIGHT PANDAL' 100000₹</div>
+        </div>
+        <div class="image-container">
+            <img class="n1" src="wedding19.jpg" alt="Open Light Pandal">
+            <button class="heart-btn">&#10084;</button>
+            <div class="address-tooltip">Location: Bangalore</div>
+            <div class="names">'OPEN LIGHT PANDAL' 100000₹</div>
+        </div>
+
+        <!-- Add more images as required -->
+    </div>
+
+    <script>
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            video.addEventListener('mouseover', () => video.play());
+            video.addEventListener('mouseout', () => video.pause());
+        });
+    </script>
+</body>
+
+</html>
